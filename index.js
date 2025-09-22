@@ -9,4 +9,4 @@ http
     let m=Math.max(x, y)
     while (m%x||m%y) m++
     res.end(m+"")
-  }).listen(3000)
+  }).listen(process.env.PORT || 3000)
