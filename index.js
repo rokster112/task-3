@@ -16,7 +16,7 @@ http
     const y = +u.searchParams.get("y");
 
     if (u.pathname !== "/rokster112_gmail_com") return res.end("NaN");
-    if (!(x > 0 && y > 0 && x % 1 === 0 && y % 1 === 0)) return res.end("NaN");
+    if (!(x >= 0 && y >= 0 && x % 1 === 0 && y % 1 === 0)) return res.end("NaN");
 
     res.end(String(lcm(x, y)));
   })
