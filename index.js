@@ -4,6 +4,7 @@ function gcd(a, b) {
   return a
 }
 function lcm(a, b) {
+  if (a === 0 && b === 0) return 0
   return (a * b) / gcd(a, b)
 }
 http
